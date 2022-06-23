@@ -9,20 +9,22 @@ import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
-const App = () => {
+import AnimatedPages from "./components/AnimatedPages";
+
+function App() {
 
     return (
-        <>
+        <AnimatedPages >
             <section id='home'><Header /></section>
-            <Nav />
             <section id='about'><About /></section>
             <section id='experience'><Experience /></section>
             <section id='services'><Services /></section>
             <section id='portfolio'><Portfolio /></section>
+            <Nav />
             <section id='testimonials'><Testimonials /></section>
             <section id='contact'><Contact /></section>
             <section><Footer /></section>
-        </>
+        </AnimatedPages>
     )
 }
 

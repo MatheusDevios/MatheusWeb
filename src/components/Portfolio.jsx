@@ -6,6 +6,7 @@ import IMG3 from '../assets/portfolio3.jpg'
 import IMG4 from '../assets/portfolio4.jpg'
 import IMG5 from '../assets/portfolio5.png'
 import IMG6 from '../assets/portfolio6.jpg'
+import { Outlet, Link } from "react-router-dom";
 
 const data = [
   {
@@ -13,42 +14,42 @@ const data = [
     image: IMG1,
     title: 'Crypto Currency Dashboard & Financial Visualization',
     github: 'https://github.com/MatheusDevios',
-    demo: 'https://dribbble.com/shots/18505765-Furniture-Web-Header'
+    demo: 'project1'
   },
   {
     id: 2,
     image: IMG2,
     title: 'Chart templetes & infographics in Figma',
     github: 'https://github.com/MatheusDevios',
-    demo: 'https://dribbble.com/shots/18505765-Furniture-Web-Header'
+    demo: 'project2'
   },
   {
     id: 3,
     image: IMG3,
     title: 'Figma dashboard UI kit for data design web apps',
     github: 'https://github.com/MatheusDevios',
-    demo: 'https://dribbble.com/shots/18505765-Furniture-Web-Header'
+    demo: 'project3'
   },
   {
     id: 4,
     image: IMG4,
     title: 'Maintaining tasks and tracking progress',
     github: 'https://github.com/MatheusDevios',
-    demo: 'https://dribbble.com/shots/18505765-Furniture-Web-Header'
+    demo: 'project4'
   },
   {
     id: 5,
     image: IMG5,
     title: 'Figma dashboard UI kit for data design web apps',
     github: 'https://github.com/MatheusDevios',
-    demo: 'https://dribbble.com/shots/18505765-Furniture-Web-Header'
+    demo: '/project5'
   },
   {
     id: 6,
     image: IMG6,
     title: 'Crypto Currency Dashboard & Financial Visualization',
     github: 'https://github.com/MatheusDevios',
-    demo: 'https://dribbble.com/shots/18505765-Furniture-Web-Header'
+    demo: 'project6'
   }
 ]
 
@@ -71,8 +72,9 @@ const Portfolio = () => {
                   <h3>{title}</h3>
                   <div className="portfolioItem-cta">
                     <a href={github} className='btn' target='blank'>GitHub Project</a>
-                    <a href={demo} className='btn btn-primary' target='blank'>Live Demo</a>
+                    <Link to={demo} className='btn btn-primary' >Live Demo</Link>
                   </div>
+                  <Outlet />
                 </article>
               )
             })
