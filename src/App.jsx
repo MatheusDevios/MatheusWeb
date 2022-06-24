@@ -21,7 +21,8 @@ function App() {
             <section id='services'><Services /></section>
             <section id='portfolio'><Portfolio /></section>
             <Nav />
-            <section id='testimonials'><Testimonials /></section>
+            {/* PUT BACK ONCE GET CLIENTS */}
+            {/* <section id='testimonials'><Testimonials /></section> */}
             <section id='contact'><Contact /></section>
             <section><Footer /></section>
         </AnimatedPages>

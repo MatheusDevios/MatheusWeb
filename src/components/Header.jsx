@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header>
       <div className="container headerContainer">
-        <h5>Hello I'm</h5>
+        <h5>Hi there, my name is</h5>
         <h1>Matheus Diniz</h1>
         <TypeAnimation
           cursor={true}

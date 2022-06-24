@@ -24,10 +24,10 @@ const about = () => {
               <article className="aboutCard">
                 <FaAward className='aboutIcon' />
                 <h5>Experience</h5>
-                <small>1+ Years Working</small>
+                <small>1 Year Working</small>
               </article>
 
-              <article className="aboutCard">
+              <article className="aboutCard hidden">
                 <ImUsers className='aboutIcon' />
                 <h5>Clients</h5>
                 <small>3 Clients</small>
@@ -40,7 +40,7 @@ const about = () => {
               </article>
             </div>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum accusamus, totam nisi in corrupti maxime repellat enim atque pariatur voluptate. Reiciendis totam id quae error eaque asperiores tenetur facere. Repudiandae.
+              Hello! My name is Matheus, based in Cork and I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences. Electrical Engineer bachelors degree at UNI-BH Brazil and on going Higher Diploma in Science and Computing at CCT Dublin - Ireland.
             </p>
 
             <a href="#contact" className='btn btn-primary'>Let's Talk</a>

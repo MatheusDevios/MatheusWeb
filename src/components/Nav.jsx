@@ -19,7 +19,8 @@ const Nav = () => {
       <Link activeClass="active" offset={-70} duration={500}  spy to="experience"><GiBookCover /></Link>
       <Link activeClass="active" offset={-70} duration={500}  spy to="services"><RiServiceFill /></Link>
       <Link activeClass="active" offset={-70} duration={500}  spy to="portfolio"><RiReactjsLine /></Link>
-      <Link activeClass="active" offset={-70} duration={500}  spy to="testimonials"><HiSpeakerphone /></Link>
+      {/* PUT BACK ONCE GET CLIENTS */}
+      {/* <Link activeClass="active" offset={-70} duration={500}  spy to="testimonials"><HiSpeakerphone /></Link> */}
       <Link activeClass="active" offset={-70} duration={500}  spy to="contact"><RiMessage2Fill /></Link>
     </nav>
   )
