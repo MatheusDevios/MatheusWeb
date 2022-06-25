@@ -6,7 +6,7 @@ import { GiBookCover } from 'react-icons/gi'
 import { RiServiceFill } from 'react-icons/ri'
 import { RiMessage2Fill } from 'react-icons/ri'
 import { RiReactjsLine } from 'react-icons/ri'
-import { HiSpeakerphone } from 'react-icons/hi'
+// import { HiSpeakerphone } from 'react-icons/hi'
 
 import { Link } from "react-scroll";
 
