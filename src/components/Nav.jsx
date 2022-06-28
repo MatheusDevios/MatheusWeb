@@ -7,21 +7,36 @@ import { RiServiceFill } from 'react-icons/ri'
 import { RiMessage2Fill } from 'react-icons/ri'
 import { RiReactjsLine } from 'react-icons/ri'
 // import { HiSpeakerphone } from 'react-icons/hi'
+// import {Tooltip} from '@mui/material';
+import Tooltip from "@material-ui/core/Tooltip";
 
 import { Link } from "react-scroll";
 
-const Nav = () => {
-
+function Nav() {
   return (
     <nav className='nav__menu'>
-      <Link activeClass="active" offset={-70} duration={500}  spy to="home"><AiTwotoneHome /></Link>
-      <Link activeClass="active" offset={-70} duration={500}  spy to="about"><FaUserSecret /></Link>
-      <Link activeClass="active" offset={-70} duration={500}  spy to="experience"><GiBookCover /></Link>
-      <Link activeClass="active" offset={-70} duration={500}  spy to="services"><RiServiceFill /></Link>
-      <Link activeClass="active" offset={-70} duration={500}  spy to="portfolio"><RiReactjsLine /></Link>
+      <Tooltip title='Home' >
+        <Link activeClass="active" offset={-70} duration={500} spy to="home"><AiTwotoneHome /></Link>
+      </Tooltip>
+      <Tooltip title='About' >
+        <Link activeClass="active" offset={-70} duration={500} spy to="about"><FaUserSecret /></Link>
+      </Tooltip>
+      <Tooltip title='Experience' >
+        <Link activeClass="active" offset={-70} duration={500} spy to="experience"><GiBookCover /></Link>
+      </Tooltip>
+      <Tooltip title='Services' >
+        <Link activeClass="active" offset={-70} duration={500} spy to="services"><RiServiceFill /></Link>
+      </Tooltip>
+      <Tooltip title='Portfolio' >
+        <Link activeClass="active" offset={-70} duration={500} spy to="portfolio"><RiReactjsLine /></Link>
+      </Tooltip>
       {/* PUT BACK ONCE GET CLIENTS */}
+      {/* <Tooltip title='Testimonials' > */}
       {/* <Link activeClass="active" offset={-70} duration={500}  spy to="testimonials"><HiSpeakerphone /></Link> */}
-      <Link activeClass="active" offset={-70} duration={500}  spy to="contact"><RiMessage2Fill /></Link>
+      {/* </Tooltip> */}
+      <Tooltip title='Contact' >
+        <Link activeClass="active" offset={-70} duration={500} spy to="contact"><RiMessage2Fill /></Link>
+      </Tooltip>
     </nav>
   )
 }
