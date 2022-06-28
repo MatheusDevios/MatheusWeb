@@ -8,6 +8,7 @@ import { GiFullFolder } from 'react-icons/gi'
 const about = () => {
   return (
     <>
+      <p></p>
       <section data-aos="zoom-in-up">
         <h5>Get to Know</h5>
         <h2>About Me</h2>
