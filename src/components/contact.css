@@ -55,6 +55,29 @@ textarea {
     color: var(--color-white);
 }
 
+form div {
+    position: relative;
+}
+form div label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: rgb(116, 114, 114);
+    transition: var(--transition);
+    pointer-events: none;
+}
+
+input:focus ~ label,
+textarea:focus ~ label,
+input:valid ~ label,
+textarea:valid ~ label{
+    top: -1.2rem;
+    left: 1rem;
+    color: #999;
+    font-weight: bold;
+    font-size: 12px;
+}
+
 /*  MEDIA QUERIES (MEDIUM DEVICES) */
 
 @media screen and (max-width: 1024px) {

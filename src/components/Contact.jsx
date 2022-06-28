@@ -17,6 +17,7 @@ const Contact = () => {
   };
 
   return (
+
     <>
       <p></p>
       <section data-aos="zoom-in-up">
@@ -46,10 +47,22 @@ const Contact = () => {
           </div>
           {/* FORM ON THE RIGHT */}
           <form ref={form} onSubmit={sendEmail}>
-            <input type="text" name='name' placeholder='Your Full Name' required />
-            <input type="email" name='email' placeholder='Your Email' required />
-            <input type="text" name='subject' placeholder='Subject' required />
-            <textarea name="message" rows="7" placeholder='Your Message' required ></textarea>
+            <div>
+              <input type="text" name='name' required />
+              <label>Your Full Name</label>
+            </div>
+            <div>
+              <input type="email" name='email' required />
+              <label>Your Email</label>
+            </div>
+            <div>
+              <input type="text" name='subject' required />
+              <label>Subject</label>
+            </div>
+            <div>
+              <textarea name="message" rows="7" required ></textarea>
+              <label>Your Message</label>
+            </div>
             <button type="submit" className='btn btn-primary'>Send Message</button>
           </form>
         </div>
