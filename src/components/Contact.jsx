@@ -30,19 +30,19 @@ const Contact = () => {
               <HiOutlineMail className='contactOptionIcon' />
               <h4>Email</h4>
               <h5>matheusdevios@gmail.com</h5>
-              <a href="mailto:matheusdinizdev@gmail.com" target='blank'>Send a message</a>
+              <a href="mailto:matheusdinizdev@gmail.com" target='blank'>Contact Me</a>
             </article>
             <article className="contactOption">
               <RiMessengerLine className='contactOptionIcon' />
               <h4>Messenger</h4>
               <h5>Matheus Diniz</h5>
-              <a href="https://m.me/MatheusCostaDiniz" target='blank'>Send a message</a>
+              <a href="https://m.me/MatheusCostaDiniz" target='blank'>Contact Me</a>
             </article>
             <article className="contactOption">
               <RiWhatsappLine className='contactOptionIcon' />
               <h4>WhatsApp</h4>
               <h5>083 412 3288</h5>
-              <a href="https://wa.me/353834123288" target='blank'>Send a message</a>
+              <a href="https://wa.me/353834123288" target='blank'>Contact Me</a>
             </article>
           </div>
           {/* FORM ON THE RIGHT */}
