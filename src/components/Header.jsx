@@ -1,7 +1,6 @@
 import React from 'react'
 import './header.css'
 import CallToAction from './CallToAction'
-import ME from '../assets/me.png'
 import HeaderSocials from './HeaderSocials'
 import TypeAnimation from 'react-type-animation';
 
@@ -21,7 +20,7 @@ const Header = () => {
         <HeaderSocials />
 
         <div className="me">
-          <img src={ME} alt="me" />
+          <img src={'https://res.cloudinary.com/dotuxkpjj/image/upload/v1656600720/me_hioxee.png'} alt="me" />
         </div>
 
         <a href="#contact" className='scrollDown'>Let's Talk</a>

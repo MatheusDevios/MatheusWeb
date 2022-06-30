@@ -1,6 +1,5 @@
 import React from 'react'
 import './about.css'
-import ME from '../assets/me-about.jpg'
 import { FaAward } from 'react-icons/fa'
 import { ImUsers } from 'react-icons/im'
 import { GiFullFolder } from 'react-icons/gi'
@@ -16,7 +15,7 @@ const about = () => {
         <div className="container aboutContainer">
           <div className="aboutMe">
             <div className="aboutMeImage">
-              <img src={ME} alt="me" />
+              <img src={'https://res.cloudinary.com/dotuxkpjj/image/upload/v1656600722/me-about_nsz0rv.jpg'} alt="me" />
             </div>
           </div>
           <div className="aboutContent">
