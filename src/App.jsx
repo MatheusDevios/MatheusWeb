@@ -10,7 +10,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 import AnimatedPages from "./components/AnimatedPages";
-import PropagateLoader from "react-spinners/PropagateLoader";
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 function App() {
 
@@ -25,7 +25,7 @@ function App() {
 
     return (
         <div>
-            {loading ? <PropagateLoader style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', height:'100vh'}} className='load' color={'#D0021B'} loading={loading} size={30} />
+            {loading ? <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', height:'100vh'}}> <PacmanLoader className='load' color={'#c21212'} loading={loading} size={30} /></div>
                 :
                 <AnimatedPages >
                     <section id='home'><Header /></section>
