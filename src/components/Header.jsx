@@ -11,10 +11,11 @@ const Header = () => {
         <h5>Hi there, my name is</h5>
         <h1>Matheus Diniz</h1>
         <TypeAnimation
+          className='type-animation'
           cursor={true}
           sequence={[' Full Stack Developer.', 1500, ' iOS Developer.', 1500]}
           wrapper="h5"
-          repeat = {Infinity}
+          repeat={Infinity}
         />
         <CallToAction />
         <HeaderSocials />
