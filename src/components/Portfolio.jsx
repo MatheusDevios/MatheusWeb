@@ -12,23 +12,23 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Crypto Currency Dashboard & Financial Visualization',
-    github: 'https://github.com/MatheusDevios',
-    demo: 'project1'
+    title: 'Weather Forecast',
+    github: 'https://github.com/MatheusDevios/New-React-Weather-App',
+    demo: 'https://weatherdev-app.netlify.app/'
   },
   {
     id: 2,
     image: IMG2,
-    title: 'Chart templetes & infographics in Figma',
-    github: 'https://github.com/MatheusDevios',
-    demo: 'project2'
+    title: 'Take Notes',
+    github: 'https://github.com/MatheusDevios/Notes-Application',
+    demo: 'https://take-notes-reactapp.netlify.app/'
   },
   {
     id: 3,
     image: IMG3,
-    title: 'Figma dashboard UI kit for data design web apps',
-    github: 'https://github.com/MatheusDevios',
-    demo: 'project3'
+    title: 'Pokedex',
+    github: 'https://github.com/MatheusDevios/Pokemon-API',
+    demo: 'https://pokedex-app-s.netlify.app/'
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const data = [
     image: IMG5,
     title: 'Figma dashboard UI kit for data design web apps',
     github: 'https://github.com/MatheusDevios',
-    demo: '/project5'
+    demo: 'project5'
   },
   {
     id: 6,
@@ -72,7 +72,9 @@ const Portfolio = () => {
                   <h3>{title}</h3>
                   <div className="portfolioItem-cta">
                     <a href={github} className='btn' target='blank'>GitHub Project</a>
+                    { id <= 3 ? <a href={demo} target="_blank" rel="noopener noreferrer" className='btn btn-primary' >Live Demo</a> : 
                     <Link to={demo} className='btn btn-primary' >Live Demo</Link>
+                    }
                   </div>
                   <Outlet />
                 </article>
