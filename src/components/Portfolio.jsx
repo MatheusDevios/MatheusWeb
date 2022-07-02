@@ -33,9 +33,9 @@ const data = [
   {
     id: 4,
     image: IMG4,
-    title: 'Maintaining tasks and tracking progress',
-    github: 'https://github.com/MatheusDevios',
-    demo: 'project4'
+    title: 'Netflix Clone',
+    github: 'https://github.com/MatheusDevios/netflix-clone',
+    demo: 'https://netflix-clonereactapp.netlify.app/'
   },
   {
     id: 5,
@@ -72,7 +72,7 @@ const Portfolio = () => {
                   <h3>{title}</h3>
                   <div className="portfolioItem-cta">
                     <a href={github} className='btn' target='blank'>GitHub Project</a>
-                    { id <= 3 ? <a href={demo} target="_blank" rel="noopener noreferrer" className='btn btn-primary' >Live Demo</a> : 
+                    { id <= 4 ? <a href={demo} target="_blank" rel="noopener noreferrer" className='btn btn-primary' >Live Demo</a> : 
                     <Link to={demo} className='btn btn-primary' >Live Demo</Link>
                     }
                   </div>
