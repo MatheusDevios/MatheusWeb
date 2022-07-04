@@ -1,5 +1,5 @@
 # <div align="center">Portfolio Web</div>
-<p align="center">A Responsive Pokedex made with React JS, Hooks,  consuming the pokeapi and using localstorage.</p>
+<p align="center">A Responsive Portfolio made with React JS, Hooks, Emailjs and using localstorage.</p>
 
 ## 🛠️ Technologies
 
