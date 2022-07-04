@@ -1,4 +1,4 @@
-# <div align="center"> Pokemon React App</div>
+# <div align="center">Portfolio Web</div>
 <p align="center">A Responsive Pokedex made with React JS, Hooks,  consuming the pokeapi and using localstorage.</p>
 
 ## 🛠️ Technologies
