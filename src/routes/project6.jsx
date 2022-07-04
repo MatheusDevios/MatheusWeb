@@ -4,8 +4,11 @@ export default function Project6() {
   return (
     <AnimatedPages>
       <div>
-        <h2>Project 6</h2>
-        <Link to="/" className='btn btn-primary' >Back</Link>
+        <h1>toDo List</h1>
+        <h3>Page yet to be modified.</h3>
+        <Link to="/" className="btn btn-primary">
+          Back
+        </Link>
       </div>
       <Outlet />
     </AnimatedPages>
