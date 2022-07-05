@@ -1,8 +1,8 @@
-import React from 'react'
-import './about.css'
-import { FaAward } from 'react-icons/fa'
-import { ImUsers } from 'react-icons/im'
-import { GiFullFolder } from 'react-icons/gi'
+import React from "react";
+import "./about.css";
+import { FaAward } from "react-icons/fa";
+import { ImUsers } from "react-icons/im";
+import { GiFullFolder } from "react-icons/gi";
 
 const about = () => {
   return (
@@ -15,39 +15,50 @@ const about = () => {
         <div className="container aboutContainer">
           <div className="aboutMe">
             <div className="aboutMeImage">
-              <img src={'https://res.cloudinary.com/dotuxkpjj/image/upload/v1656600722/me-about_nsz0rv.jpg'} alt="me" />
+              <img
+                src={
+                  "https://res.cloudinary.com/dotuxkpjj/image/upload/v1656600722/me-about_nsz0rv.jpg"
+                }
+                alt="me"
+              />
             </div>
           </div>
           <div className="aboutContent">
             <div className="aboutCards">
               <article className="aboutCard">
-                <FaAward className='aboutIcon' />
+                <FaAward className="aboutIcon" />
                 <h5>Experience</h5>
                 <small>Junior</small>
               </article>
 
               <article className="aboutCard hidden">
-                <ImUsers className='aboutIcon' />
+                <ImUsers className="aboutIcon" />
                 <h5>Clients</h5>
                 <small>3 Clients</small>
               </article>
 
               <article className="aboutCard">
-                <GiFullFolder className='aboutIcon' />
+                <GiFullFolder className="aboutIcon" />
                 <h5>Projects</h5>
                 <small>20+ Completed</small>
               </article>
             </div>
             <p>
-              Hello! My name is Matheus, based in Cork and I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences. Electrical Engineer bachelors degree at UNI-BH Brazil and on going Higher Diploma in Science and Computing at CCT Dublin - Ireland.
+              Hello! My name is Matheus, I'm brazilian, based in Cork and I have
+              serious passion for UI effects, animations and creating intuitive,
+              dynamic user experiences. Electrical Engineer bachelors degree at
+              UNI-BH Brazil and on going Higher Diploma in Science and Computing
+              at CCT Dublin - Ireland.
             </p>
 
-            <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+            <a href="#contact" className="btn btn-primary">
+              Let's Talk
+            </a>
           </div>
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default about
+export default about;
