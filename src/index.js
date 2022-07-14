@@ -23,7 +23,7 @@ root.render(
           <Route path="project3" element={<Project3 />} />
           <Route path="project4" element={<Project4 />} />
           <Route path="Authentication-and-Security" element={<Project5 />} />
-          <Route path="toDo-List" element={<Project6 />} />
+          <Route path="MatMealsFood" element={<Project6 />} />
         </Routes>
       </BrowserRouter>
     </AnimatePresence>

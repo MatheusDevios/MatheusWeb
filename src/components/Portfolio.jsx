@@ -4,8 +4,8 @@ import IMG1 from "../assets/portfolio1.jpg";
 import IMG2 from "../assets/portfolio4.jpg";
 import IMG3 from "../assets/portfolio3.jpg";
 import IMG4 from "../assets/portfolio2.jpg";
-import IMG5 from "../assets/portfolio5.png";
-import IMG6 from "../assets/portfolio6.jpg";
+import IMG5 from "../assets/portfolio5.jpg";
+import IMG6 from "../assets/portfolio6.png";
 import { Outlet, Link } from "react-router-dom";
 
 const data = [
@@ -40,16 +40,16 @@ const data = [
   {
     id: 5,
     image: IMG5,
-    title: "Login/Sign Up Authentication and Security",
-    github: "https://github.com/MatheusDevios/Authentication-Security",
-    demo: "Authentication-and-Security",
+    title: "Ordering MatMeals App",
+    github: "https://github.com/MatheusDevios/Food-Order-App",
+    demo: "https://order-food-react-app.netlify.app/",
   },
   {
     id: 6,
     image: IMG6,
-    title: "toDo List",
-    github: "https://github.com/MatheusDevios/React-toDo-List",
-    demo: "toDo-List",
+    title: "Login/Sign Up Authentication and Security",
+    github: "https://github.com/MatheusDevios/Authentication-Security",
+    demo: "Authentication-and-Security",
   },
 ];
 
@@ -73,7 +73,7 @@ const Portfolio = () => {
                   <a href={github} className="btn" target="blank">
                     GitHub Project
                   </a>
-                  {id <= 4 ? (
+                  {id <= 5 ? (
                     <a
                       href={demo}
                       target="_blank"
