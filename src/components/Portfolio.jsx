@@ -1,9 +1,9 @@
 import React from "react";
 import "./portfolio.css";
 import IMG1 from "../assets/portfolio1.jpg";
-import IMG2 from "../assets/portfolio2.jpg";
+import IMG2 from "../assets/portfolio4.jpg";
 import IMG3 from "../assets/portfolio3.jpg";
-import IMG4 from "../assets/portfolio4.jpg";
+import IMG4 from "../assets/portfolio2.jpg";
 import IMG5 from "../assets/portfolio5.png";
 import IMG6 from "../assets/portfolio6.jpg";
 import { Outlet, Link } from "react-router-dom";
@@ -19,9 +19,9 @@ const data = [
   {
     id: 2,
     image: IMG2,
-    title: "Take Notes",
-    github: "https://github.com/MatheusDevios/Notes-Application",
-    demo: "https://take-notes-reactapp.netlify.app/",
+    title: "Netflix Clone",
+    github: "https://github.com/MatheusDevios/netflix-clone",
+    demo: "https://netflix-clonereactapp.netlify.app/",
   },
   {
     id: 3,
@@ -33,23 +33,23 @@ const data = [
   {
     id: 4,
     image: IMG4,
-    title: "Netflix Clone",
-    github: "https://github.com/MatheusDevios/netflix-clone",
-    demo: "https://netflix-clonereactapp.netlify.app/",
+    title: "Take Notes",
+    github: "https://github.com/MatheusDevios/Notes-Application",
+    demo: "https://take-notes-reactapp.netlify.app/",
   },
   {
     id: 5,
     image: IMG5,
     title: "Login/Sign Up Authentication and Security",
     github: "https://github.com/MatheusDevios/Authentication-Security",
-    demo: "project5",
+    demo: "Authentication-and-Security",
   },
   {
     id: 6,
     image: IMG6,
     title: "toDo List",
     github: "https://github.com/MatheusDevios/React-toDo-List",
-    demo: "project6",
+    demo: "toDo-List",
   },
 ];
 
