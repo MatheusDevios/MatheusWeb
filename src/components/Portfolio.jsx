@@ -41,7 +41,7 @@ const data = [
     id: 5,
     image: IMG5,
     title: "Ordering MatMeals App",
-    github: "https://github.com/MatheusDevios/Food-Order-App",
+    github: "https://github.com/MatheusDevios/Food-App",
     demo: "https://order-food-react-app.netlify.app/",
   },
   {
