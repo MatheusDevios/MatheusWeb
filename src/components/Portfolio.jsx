@@ -1,9 +1,9 @@
 import React from "react";
 import "./portfolio.css";
 import IMG1 from "../assets/portfolio1.jpg";
-import IMG2 from "../assets/portfolio4.jpg";
+import IMG2 from "../assets/portfolio2.jpg";
 import IMG3 from "../assets/portfolio3.jpg";
-import IMG4 from "../assets/portfolio2.jpg";
+import IMG4 from "../assets/portfolio4.jpg";
 import IMG5 from "../assets/portfolio5.jpg";
 import IMG6 from "../assets/portfolio6.png";
 import { Outlet, Link } from "react-router-dom";
@@ -12,9 +12,9 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Weather Forecast",
-    github: "https://github.com/MatheusDevios/New-React-Weather-App",
-    demo: "https://weatherdev-app.netlify.app/",
+    title: "Ordering MatMeals App",
+    github: "https://github.com/MatheusDevios/Food-App",
+    demo: "https://order-food-react-app.netlify.app/",
   },
   {
     id: 2,
@@ -33,21 +33,21 @@ const data = [
   {
     id: 4,
     image: IMG4,
+    title: "Weather Forecast",
+    github: "https://github.com/MatheusDevios/New-React-Weather-App",
+    demo: "https://weatherdev-app.netlify.app/",
+  },
+  {
+    id: 5,
+    image: IMG5,
     title: "Take Notes",
     github: "https://github.com/MatheusDevios/Notes-Application",
     demo: "https://take-notes-reactapp.netlify.app/",
   },
   {
-    id: 5,
-    image: IMG5,
-    title: "Ordering MatMeals App",
-    github: "https://github.com/MatheusDevios/Food-App",
-    demo: "https://order-food-react-app.netlify.app/",
-  },
-  {
     id: 6,
     image: IMG6,
-    title: "Login/Sign Up Authentication and Security",
+    title: "Login/Sign Up Authentication and Security with Node",
     github: "https://github.com/MatheusDevios/Authentication-Security",
     demo: "Authentication-and-Security",
   },
