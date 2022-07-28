@@ -11,45 +11,45 @@ import { Outlet, Link } from "react-router-dom";
 const data = [
   {
     id: 1,
+    image: IMG6,
+    title: "Xavier Barber",
+    // github: "https://github.com/MatheusDevios/Food-App",
+    demo: "https://xavierbarber.netlify.app/",
+  },
+  {
+    id: 2,
     image: IMG1,
     title: "Ordering MatMeals App",
     github: "https://github.com/MatheusDevios/Food-App",
     demo: "https://order-food-react-app.netlify.app/",
   },
   {
-    id: 2,
+    id: 3,
     image: IMG2,
     title: "Netflix Clone",
     github: "https://github.com/MatheusDevios/netflix-clone",
     demo: "https://netflix-clonereactapp.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     image: IMG3,
     title: "Pokedex",
     github: "https://github.com/MatheusDevios/Pokemon-API",
     demo: "https://pokedex-app-s.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     image: IMG4,
     title: "Weather Forecast",
     github: "https://github.com/MatheusDevios/New-React-Weather-App",
     demo: "https://weatherdev-app.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     image: IMG5,
     title: "Take Notes",
     github: "https://github.com/MatheusDevios/Notes-Application",
     demo: "https://take-notes-reactapp.netlify.app/",
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: "Login/Sign Up Authentication and Security with Node",
-    github: "https://github.com/MatheusDevios/Authentication-Security",
-    demo: "Authentication-and-Security",
   },
 ];
 
@@ -70,10 +70,14 @@ const Portfolio = () => {
                 </div>
                 <h3>{title}</h3>
                 <div className="portfolioItem-cta">
-                  <a href={github} className="btn" target="blank">
-                    GitHub Project
-                  </a>
-                  {id <= 5 ? (
+                  {id > 1 ? (
+                    <a href={github} className="btn" target="blank">
+                      GitHub Project
+                    </a>
+                  ) : (
+                    ""
+                  )}
+                  {id <= 6 ? (
                     <a
                       href={demo}
                       target="_blank"
