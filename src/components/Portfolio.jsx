@@ -14,7 +14,7 @@ const data = [
     image: IMG6,
     title: "Xavier Barber",
     // github: "https://github.com/MatheusDevios/Food-App",
-    demo: "https://xavierbarber.netlify.app/",
+    demo: "https://www.xavier-barber.com/",
   },
   {
     id: 2,
