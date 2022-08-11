@@ -48,7 +48,7 @@ const data = [
     id: 6,
     image: IMG5,
     title: "Take Notes",
-    github: "https://github.com/MatheusDevios/Notes-Application",
+    github: "https://github.com/MatheusDevios/Notes-MERN-APP",
     demo: "https://take-notes-reactapp.netlify.app/",
   },
 ];
