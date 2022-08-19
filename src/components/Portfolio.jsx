@@ -6,7 +6,10 @@ import IMG3 from "../assets/portfolio3.jpg";
 import IMG4 from "../assets/portfolio4.jpg";
 import IMG5 from "../assets/portfolio5.jpg";
 import IMG6 from "../assets/portfolio6.png";
+import IMG7 from "../assets/portfolio7.png";
 import { Outlet, Link } from "react-router-dom";
+import "react-slideshow-image/dist/styles.css";
+import { Fade } from "react-slideshow-image";
 
 const data = [
   {
@@ -24,6 +27,13 @@ const data = [
     demo: "https://order-food-react-app.netlify.app/",
   },
   {
+    id: 7,
+    image: IMG7,
+    title: "ChatsApp",
+    github: "https://github.com/MatheusDevios/ChatsApp",
+    demo: "https://chats-app-matheusdevios.vercel.app/",
+  },
+  {
     id: 3,
     image: IMG2,
     title: "Netflix Clone",
@@ -38,18 +48,18 @@ const data = [
     demo: "https://pokedex-app-s.netlify.app/",
   },
   {
-    id: 5,
-    image: IMG4,
-    title: "Weather Forecast",
-    github: "https://github.com/MatheusDevios/New-React-Weather-App",
-    demo: "https://weatherdev-app.netlify.app/",
-  },
-  {
     id: 6,
     image: IMG5,
     title: "Take Notes",
     github: "https://github.com/MatheusDevios/Notes-MERN-APP",
     demo: "https://take-notes-reactapp.netlify.app/",
+  },
+  {
+    id: 5,
+    image: IMG4,
+    title: "Weather Forecast",
+    github: "https://github.com/MatheusDevios/New-React-Weather-App",
+    demo: "https://weatherdev-app.netlify.app/",
   },
 ];
 
@@ -62,40 +72,42 @@ const Portfolio = () => {
         <h2>Portifolio</h2>
 
         <div className="container portfolioContainer">
-          {data.map(({ id, image, title, github, demo }) => {
-            return (
-              <article key={id} className="portfolioItem">
-                <div className="portfolioItemImage">
-                  <img src={image} alt={title} />
-                </div>
-                <h3>{title}</h3>
-                <div className="portfolioItem-cta">
-                  {id > 1 ? (
-                    <a href={github} className="btn" target="blank">
-                      GitHub Project
-                    </a>
-                  ) : (
-                    ""
-                  )}
-                  {id <= 6 ? (
-                    <a
-                      href={demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-primary"
-                    >
-                      Live Demo
-                    </a>
-                  ) : (
-                    <Link to={demo} className="btn btn-primary">
-                      Live Demo
-                    </Link>
-                  )}
-                </div>
-                <Outlet />
-              </article>
-            );
-          })}
+          <Fade>
+            {data.map(({ id, image, title, github, demo }) => {
+              return (
+                <article key={id} className="portfolioItem">
+                  <div className="portfolioItemImage">
+                    <img src={image} alt={title} />
+                  </div>
+                  <h3>{title}</h3>
+                  <div className="portfolioItem-cta">
+                    {id > 1 ? (
+                      <a href={github} className="btn" target="blank">
+                        GitHub Project
+                      </a>
+                    ) : (
+                      ""
+                    )}
+                    {id <= 7 && id > 1 ? (
+                      <a
+                        href={demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-primary"
+                      >
+                        Live Demo
+                      </a>
+                    ) : (
+                      <Link to={demo} className="btn btn-primary">
+                        Xavier-Barber Live
+                      </Link>
+                    )}
+                  </div>
+                  <Outlet />
+                </article>
+              );
+            })}
+          </Fade>
         </div>
       </section>
     </>
