@@ -1,9 +1,11 @@
 .portfolioContainer.container {
-    /* display: grid; */
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* gap: 1.5rem; */
     justify-content: center;
     width: 35%;
+    padding-bottom: 2rem;
+}
+
+.dotsPortfolio button::before {
+    color: whitesmoke !important;
 }
 
 .portfolioItem {
@@ -24,19 +26,6 @@
     overflow: hidden;
 }
 
-/* .portfolioItemImage img {
-    height: 480px;
-} */
-
-/* 
-
-.portfolioItemImage img:hover {
-    height: auto;
-    height: auto;
-    transition: var(--transition);
-}
-
-*/
 .portfolioItem h3 {
     margin: 1.2rem 0 2rem;
 }
@@ -51,12 +40,14 @@
 
 @media screen and (max-width: 1024px) {
     .portfolioContainer.container {
-        width: 60%;
-        /* grid-template-columns: 1fr 1fr;
-        gap: 1.2rem; */
+        width: 80%;
     }
 }
 
 /*  MEDIA QUERIES (SMAIL DEVICES) */
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+    .portfolioItem {
+        height: 415px;
+    }
+}

@@ -11,6 +11,10 @@ import { Outlet, Link } from "react-router-dom";
 import "react-slideshow-image/dist/styles.css";
 import { Fade } from "react-slideshow-image";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+
 const data = [
   {
     id: 1,
@@ -63,6 +67,16 @@ const data = [
   },
 ];
 
+let settings = {
+  dots: true,
+  infinite: true,
+  swipeToSlide: true,
+  speed: 1400,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dotsClass: `slick-dots dotsPortfolio`,
+};
+
 const Portfolio = () => {
   return (
     <>
@@ -72,10 +86,10 @@ const Portfolio = () => {
         <h2>Portifolio</h2>
 
         <div className="container portfolioContainer">
-          <Fade>
+          <Slider {...settings}>
             {data.map(({ id, image, title, github, demo }) => {
               return (
-                <article key={id} className="portfolioItem">
+                <div key={id} className="portfolioItem">
                   <div className="portfolioItemImage">
                     <img src={image} alt={title} />
                   </div>
@@ -104,10 +118,10 @@ const Portfolio = () => {
                     )}
                   </div>
                   <Outlet />
-                </article>
+                </div>
               );
             })}
-          </Fade>
+          </Slider>
         </div>
       </section>
     </>
