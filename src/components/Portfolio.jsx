@@ -8,8 +8,6 @@ import IMG5 from "../assets/portfolio5.jpg";
 import IMG6 from "../assets/portfolio6.png";
 import IMG7 from "../assets/portfolio7.png";
 import { Outlet, Link } from "react-router-dom";
-import "react-slideshow-image/dist/styles.css";
-import { Fade } from "react-slideshow-image";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
