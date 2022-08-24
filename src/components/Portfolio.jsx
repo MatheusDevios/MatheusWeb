@@ -7,7 +7,7 @@ import IMG4 from "../assets/portfolio4.jpg";
 import IMG5 from "../assets/portfolio5.jpg";
 import IMG6 from "../assets/portfolio6.png";
 import IMG7 from "../assets/portfolio7.png";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
@@ -110,9 +110,9 @@ const Portfolio = () => {
                         Live Demo
                       </a>
                     ) : (
-                      <Link to={demo} className="btn btn-primary">
+                      <a href={demo} className="btn btn-primary" target="blank">
                         Xavier-Barber Live
-                      </Link>
+                      </a>
                     )}
                   </div>
                   <Outlet />
