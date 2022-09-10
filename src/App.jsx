@@ -5,7 +5,7 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
-// import Testimonials from './components/Testimonials'
+import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Project5 from "./pages/project5";
@@ -67,7 +67,9 @@ function App() {
                 </section>
                 <Nav />
                 {/* PUT BACK ONCE GET CLIENTS */}
-                {/* <section id='testimonials'><Testimonials /></section> */}
+                <section id="testimonials">
+                  <Testimonials />
+                </section>
                 <section id="contact">
                   <Contact />
                 </section>
