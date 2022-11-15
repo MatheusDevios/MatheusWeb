@@ -13,7 +13,7 @@ const Header = () => {
         <TypeAnimation
           className="type-animation"
           cursor={true}
-          sequence={[" Web Developer.", 1500, " iOS Developer.", 1500]}
+          sequence={["Software Engineer. ", 1500, " Web Developer.", 1500]}
           wrapper="h5"
           repeat={Infinity}
         />

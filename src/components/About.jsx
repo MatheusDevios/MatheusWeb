@@ -44,11 +44,14 @@ const about = () => {
               </article>
             </div>
             <p>
-              Hello! My name is Matheus, I'm brazilian, based in Cork and I have
-              serious passion for UI effects, animations and creating intuitive,
-              dynamic user experiences. Electrical Engineer bachelors degree at
-              UNI-BH Brazil and on going Higher Diploma in Science and Computing
-              at CCT Dublin - Ireland.
+              Hello! My name is Matheus, I'm brazilian, based in Cork and I'm a
+              Junior Software Engineer passionate, energetic, creative and
+              versatile problem solver eager to learn new technologies and take
+              on challenges to revolutionise the industry. I come from an
+              Electrical Engineering background, with great experience in
+              Software and Hardware Support. I am currently studying Science in
+              Computing at CCT College Dublin - Ireland. I am sure there are
+              many transferable skills I developed through my career.
             </p>
 
             <a href="#contact" className="btn btn-primary">
