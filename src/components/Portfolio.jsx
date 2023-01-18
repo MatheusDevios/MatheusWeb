@@ -1,5 +1,6 @@
 import React from "react";
 import "./portfolio.css";
+import IMG0 from "../assets/portfolio0.png";
 import IMG1 from "../assets/portfolio1.jpg";
 import IMG2 from "../assets/portfolio2.jpg";
 import IMG3 from "../assets/portfolio3.jpg";
@@ -15,11 +16,18 @@ import "slick-carousel/slick/slick.css";
 
 const data = [
   {
-    id: 1,
+    id: 0,
     image: IMG6,
     title: "Xavier Barber",
     // github: "https://github.com/MatheusDevios/Food-App",
     demo: "https://www.xavier-barber.com/",
+  },
+  {
+    id: 1,
+    image: IMG0,
+    title: "Ger's Garage",
+    github: "https://github.com/MatheusDevios/Ger-s-Garage",
+    demo: "https://gers-garage.netlify.app/",
   },
   {
     id: 2,
@@ -93,14 +101,18 @@ const Portfolio = () => {
                   </div>
                   <h3>{title}</h3>
                   <div className="portfolioItem-cta">
-                    {id > 1 ? (
+                    {id >= 1 ? (
                       <a href={github} className="btn" target="blank">
                         GitHub Project
                       </a>
                     ) : (
                       ""
                     )}
-                    {id <= 7 && id > 1 ? (
+                    {id === 0 ? (
+                      <a href={demo} className="btn btn-primary" target="blank">
+                        Xavier-Barber Live
+                      </a>
+                    ) : (
                       <a
                         href={demo}
                         target="_blank"
@@ -108,10 +120,6 @@ const Portfolio = () => {
                         className="btn btn-primary"
                       >
                         Live Demo
-                      </a>
-                    ) : (
-                      <a href={demo} className="btn btn-primary" target="blank">
-                        Xavier-Barber Live
                       </a>
                     )}
                   </div>
