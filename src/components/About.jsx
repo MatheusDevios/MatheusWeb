@@ -49,9 +49,9 @@ const about = () => {
               versatile problem solver eager to learn new technologies and take
               on challenges to revolutionise the industry. I come from an
               Electrical Engineering background, with great experience in
-              Software and Hardware Support. I am currently studying Science in
-              Computing at CCT College Dublin - Ireland. I am sure there are
-              many transferable skills I developed through my career.
+              Software and Hardware Support. I have just graduated with a
+              Science in Computing at CCT College Dublin - Ireland. I am sure
+              there are many transferable skills I developed through my career.
             </p>
 
             <a href="#contact" className="btn btn-primary">
