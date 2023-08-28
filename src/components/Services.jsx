@@ -13,17 +13,21 @@ const Services = () => {
           {/* Web Development */}
           <article className="service">
             <div className="serviceHead">
-              <h3>Web Development</h3>
+              <h3>Web/Mobile Development</h3>
             </div>
 
             <ul className="serviceList">
               <li>
                 <FiCheckCircle className="serviceListIcon" />
-                <p>Responsive Web Design.</p>
+                <p>Responsive Design.</p>
               </li>
               <li>
                 <FiCheckCircle className="serviceListIcon" />
                 <p>User Interface Design.</p>
+              </li>
+              <li>
+                <FiCheckCircle className="serviceListIcon" />
+                <p>E-Commerce.</p>
               </li>
               <li>
                 <FiCheckCircle className="serviceListIcon" />

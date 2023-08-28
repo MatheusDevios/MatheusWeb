@@ -28,7 +28,7 @@ const about = () => {
               <article className="aboutCard">
                 <FaAward className="aboutIcon" />
                 <h5>Experience</h5>
-                <small>Junior</small>
+                <small>1+ years</small>
               </article>
 
               <article className="aboutCard hidden">
@@ -44,14 +44,14 @@ const about = () => {
               </article>
             </div>
             <p>
-              Hello! My name is Matheus, I'm brazilian, based in Cork and I'm a
-              Junior Software Engineer passionate, energetic, creative and
-              versatile problem solver eager to learn new technologies and take
-              on challenges to revolutionise the industry. I come from an
-              Electrical Engineering background, with great experience in
-              Software and Hardware Support. I have just graduated with a
-              Science in Computing at CCT College Dublin - Ireland. I am sure
-              there are many transferable skills I developed through my career.
+              Hello! My name is Matheus, I am an enthusiastic, result-driven Software Engineer who
+              just graduated with a Higher Diploma in Computer Science in Feb 2023 and with 1+ years
+              of experience as Software Engineer and 2+ as IT Support Engineer. Who is a passionate,
+              energetic, creative and versatile problem solver eager to learn new technologies and
+              take on challenges to bring value to the company. I come from an Electrical
+              Engineering background, with significant experience in Software and Hardware Support.
+              I consider myself a rapid learner, and I am sure there are many transferable skills I
+              have developed throughout my career.
             </p>
 
             <a href="#contact" className="btn btn-primary">

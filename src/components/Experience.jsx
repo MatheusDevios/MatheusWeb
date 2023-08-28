@@ -38,6 +38,13 @@ const Experience = () => {
               <article className="experienceDetails">
                 <BsFillPatchCheckFill className="experienceDetailsIcon" />
                 <div>
+                  <h4>TypeScript</h4>
+                  {/* <small className='text-light'>Experienced</small> */}
+                </div>
+              </article>
+              <article className="experienceDetails">
+                <BsFillPatchCheckFill className="experienceDetailsIcon" />
+                <div>
                   <h4>BootStrap</h4>
                   {/* <small className='text-light'>Intermediate</small> */}
                 </div>
@@ -72,6 +79,27 @@ const Experience = () => {
               <article className="experienceDetails">
                 <BsFillPatchCheckFill className="experienceDetailsIcon" />
                 <div>
+                  <h4>Express.js</h4>
+                  {/* <small className='text-light'>Intermediate</small> */}
+                </div>
+              </article>
+              <article className="experienceDetails">
+                <BsFillPatchCheckFill className="experienceDetailsIcon" />
+                <div>
+                  <h4>Java</h4>
+                  {/* <small className='text-light'>Intermediate</small> */}
+                </div>
+              </article>
+              <article className="experienceDetails">
+                <BsFillPatchCheckFill className="experienceDetailsIcon" />
+                <div>
+                  <h4>Spring Boot</h4>
+                  {/* <small className='text-light'>Intermediate</small> */}
+                </div>
+              </article>
+              <article className="experienceDetails">
+                <BsFillPatchCheckFill className="experienceDetailsIcon" />
+                <div>
                   <h4>MySQL</h4>
                   {/* <small className='text-light'>Intermediate</small> */}
                 </div>
@@ -83,13 +111,7 @@ const Experience = () => {
                   {/* <small className='text-light'>Intermediate</small> */}
                 </div>
               </article>
-              <article className="experienceDetails">
-                <BsFillPatchCheckFill className="experienceDetailsIcon" />
-                <div>
-                  <h4>Mongoose</h4>
-                  {/* <small className='text-light'>Intermediate</small> */}
-                </div>
-              </article>
+
               <article className="experienceDetails">
                 <BsFillPatchCheckFill className="experienceDetailsIcon" />
                 <div>
@@ -101,47 +123,20 @@ const Experience = () => {
           </div>
           {/* iOS Development */}
           <div className="experienceIosdev">
-            <h3>iOS Development</h3>
+            <h3>Mobile Development</h3>
             <div className="experienceContent">
               <article className="experienceDetails">
                 <BsFillPatchCheckFill className="experienceDetailsIcon" />
                 <div>
-                  <h4>Swift</h4>
+                  <h4>React Native</h4>
                   {/* <small className='text-light'>Experienced</small> */}
                 </div>
               </article>
-              <article className="experienceDetails">
-                <BsFillPatchCheckFill className="experienceDetailsIcon" />
-                <div>
-                  <h4>CoreML</h4>
-                  {/* <small className='text-light'>Experienced</small> */}
-                </div>
-              </article>
-              <article className="experienceDetails">
-                <BsFillPatchCheckFill className="experienceDetailsIcon" />
-                <div>
-                  <h4>Core Data</h4>
-                  {/* <small className='text-light'>Experienced</small> */}
-                </div>
-              </article>
-              <article className="experienceDetails">
-                <BsFillPatchCheckFill className="experienceDetailsIcon" />
-                <div>
-                  <h4>CocoaPods</h4>
-                  {/* <small className='text-light'>Experienced</small> */}
-                </div>
-              </article>
+
               <article className="experienceDetails">
                 <BsFillPatchCheckFill className="experienceDetailsIcon" />
                 <div>
                   <h4>MVC Design Pattern</h4>
-                  {/* <small className='text-light'>Intermediate</small> */}
-                </div>
-              </article>
-              <article className="experienceDetails">
-                <BsFillPatchCheckFill className="experienceDetailsIcon" />
-                <div>
-                  <h4>UIKit</h4>
                   {/* <small className='text-light'>Intermediate</small> */}
                 </div>
               </article>
